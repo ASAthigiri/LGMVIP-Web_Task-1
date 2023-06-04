@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Todo list</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <button onclick="darkMode()">Dark</button>
+   <button onclick="lightMode()">Light</button>
+  <div id="myDIV">
+    <div class="row1">
+      <div class="column1">
+        <div class="card">
+          <div class="container">
+            <img src="images/Checklist.jpg" height="300px" width="800px">
+          </div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="column2">
+          <div class="card">
+            <div class="container">
+              <h1>TODO LIST</h3>
+              <hr>
+                <h2>Lets Grow More 1st Task</h5>
+                  <div class="header" align="right">
+                    <input type="text" id="myId" placeholder="Enter the details to make Checklist" size="50px" />
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                    <br>
+                  </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      
+      <div id="myDIV">
+    <h2><b>Your tasks</b></h2>
+    <ul id="myUL">
+    </ul>
+  </div>
+
+  <script>
+    function darkMode() {
+      var element = document.body;
+      var content = document.getElementById("DarkModetext");
+      element.className = "dark-mode";
+
+    }
+    function lightMode() {
+      var element = document.body;
+      var content = document.getElementById("DarkModetext");
+      element.className = "light-mode";
+
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
