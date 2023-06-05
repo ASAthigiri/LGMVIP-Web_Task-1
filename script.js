@@ -52,7 +52,7 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-      alert("Do you want to delete!! click "ok" to delele otherwise click "esc" ");
+      alert("Do you want to delete!! click ok to delele otherwise click esc");
     }
   }
 }
